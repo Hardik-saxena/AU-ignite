@@ -1,0 +1,151 @@
+high level lang. - readable by human eg.:- c, c++, java, python.
+intermediate level lang. - byte code - partially readable by human partially by computer.
+low level lang. - assembly lang
+
+# js -> 1994, Breaden eich.
+# to make wabpage interactive.
+# Dynamically typed lang
+# Synchronous programming lang - line by line execution
+##  js works with client side(FE) as well as servers side(BE).
+
+## Tokens - Smallest unit of a program.
+* keywords- reserved word/predefined word
+   -> lower case
+   -> if, else, for, class, break, continue, return,
+* Indentifier ,- name of the component
+    -> class, method/function, variables
+    rules:-
+    1) can not start with number
+    1Sum-w
+    sum1-c
+    2) space are not allowed.
+    first name - w
+    first_name - c
+    3) keywordsare not allowed
+    for - w         if - w
+    For - c         If - c
+    4) special characters are not allowed
+* variables
+* operators 
+    -> Arithmatic operators (+,-,*,/,%)
+    -> Relational operators (>,<,>=,<=)
+    -> Logical operators (&&,||,!)
+    -> Assignment operators (=)
+    -> compression operators (==, ===)
+    -> bitwise operators(&, |, >>, <<)
+    -> increment/decrement operators
+        => pre = ++i, --i
+        => post = i++, i--
+    -> conditional operators 
+* literals(content)
+ctrl+shift+j 
+
+
+
+## Datatypes:-
+* Primitive Datatype (predefined)
+-> number, BigInt, string, boolean, undefined, null, symbol
+
+* non-Primitive Datatype
+
+
+## array:- is is a type of object.
+-> it can store multiple values.
+-> Array is hetrogeneous type.
+    [10,'a', 12.5, null, "hello"]
+-> array is not fixed size
+-> array can grow and shrink.
+-> array folows growable data structure.
+-> array index stands from 0 index.
+-> array length = arr.length
+-> last index = arr.length-1
+-> to check array - Array.isArray(.);
+-> array is mutable.
+-> Array IS REFERENCE type
+* Syntax:-
+1) let arr = [10, 'a', 12.5, "hello"]
+2) using new keyword or constructor function
+    let arr = new Array (size)<-optional 
+
+
+
+## object:- 
+1) using direct literals
+    let obj = {(key1 : value1), (key2 : value2)}
+
+2) using new key word or constructor function
+    let obj = new Object();
+    obj.key = value
+
+-> objects are reference type(non Primitive datatype).
+-> object is not itrable(no index).
+-> object store key and value pair (key shoulb unique, value can be of any type(Primitive or non Primitive)).
+-> object store real world data.
+
+
+## functions:- block of code.
+    let greet = dunction(){
+        clg("hello")
+    }
+    greet();
+
+    -> a functionwhich doesnot have any name is called anonyuous function.
+    -> whaen a function store inside a varialble is called function expression.
+
+    * Function with parameter or parameterized function:-
+    ->  function SumOfTwoNumbers(a,b){
+        clg(a+b)
+    }
+
+
+
+                                                      Window
+                                                        |
+                                                        |
+       ----------------------------------------------------------------------------------------------------------
+       |                      |                             |                           |                       |
+       |                      |                             |                           |                       |
+     screen                navigator                     Location                    history                 Document 
+
+NOTE:
+    -> Windos is the default object in java script.
+    -> All the variables & methods defined by user will be under the control of window object.
+    -> Using window object name to access the properties of window object is optional.
+    -> Window.navigator (or) navigator in (console). 
+
+
+## Document Object Model(DOM)
+    -> Under the window object we have document object which helps to control HTML document.
+    -> Under document object according to HTML
+
+
+
+                                                     Document
+                                                        |
+                                                       HTML
+                                                      /    \
+                                                     /      \
+                                                    /        \
+                                ------------------Head      Body                                                 
+                                |----- Meta                 /
+                                |                          /
+                                |----- Title              /
+                                                         / 
+
+
+
+
+DOM Manipulation:-
+-> To make the pages as Dynamic we will change the DOM whichh is turned as DOM Manipulation.
+-> To do DOM Manipulation following steps as to be used:
+   => Select the HTML element which has to be changed
+          ~> To select the HTMLelements following methods will be used which are present in Documentobject.
+               * getElementById()
+               * getElementTagName()
+               * getElementClassName()
+               * getElementByName()
+               * querySelector()
+               * querySelectorAll()
+    => Do the changes:
+    
+                                                                     
